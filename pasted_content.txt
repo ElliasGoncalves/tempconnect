@@ -1,0 +1,189 @@
+Crie um sistema de páginas SEO dentro do site TempConnect com o objetivo de gerar tráfego orgânico do Google em inglês e português.
+
+---
+
+# 🎯 OBJETIVO
+
+Fazer com que o site apareça no Google quando usuários pesquisarem termos como:
+
+* temporary email free
+* fake email generator
+* receive sms online
+* email temporario gratis
+* gerador de email
+* numero fake para sms
+
+Cada página será uma porta de entrada independente.
+
+---
+
+# 🧠 ESTRATÉGIA
+
+Atualmente o site possui apenas a página principal (home).
+
+Agora será expandido para múltiplas páginas internas otimizadas para SEO.
+
+IMPORTANTE:
+
+* Essas páginas NÃO substituem a home
+* Elas funcionam como entradas adicionais vindas do Google
+
+---
+
+# 📁 CRIAR AS SEGUINTES PÁGINAS
+
+## 1. Página (Inglês)
+
+URL: /temporary-email
+
+Title:
+Free Temporary Email - No Signup Required
+
+Meta Description:
+Generate a free temporary email instantly. No signup required. Fast, secure and disposable email service.
+
+H1:
+Free Temporary Email Generator
+
+Conteúdo:
+
+* Explicação clara do que é email temporário
+* Benefícios (privacidade, evitar spam, rapidez)
+* Inserir a ferramenta já existente
+* Texto com no mínimo 300 palavras
+* Linguagem natural e otimizada para SEO
+
+---
+
+## 2. Página (Português)
+
+URL: /email-temporario
+
+Title:
+Email Temporário Grátis - Sem Cadastro
+
+Meta Description:
+Gere um email temporário grátis instantaneamente. Sem cadastro, rápido e seguro para evitar spam.
+
+H1:
+Gerador de Email Temporário
+
+Conteúdo:
+
+* Explicação em português
+* Benefícios
+* Inserir a ferramenta existente
+* Mínimo 300 palavras
+* SEO otimizado para português
+
+---
+
+## 3. Página (SMS Online)
+
+URL: /receive-sms
+
+Title:
+Receive SMS Online - Free Virtual Phone Number
+
+Meta Description:
+Receive SMS online using free virtual phone numbers. No registration required.
+
+H1:
+Receive SMS Online Free
+
+Conteúdo:
+
+* Explicação do serviço
+* Inserir ou preparar espaço para futura ferramenta
+* Mínimo 300 palavras
+* SEO otimizado
+
+---
+
+# 📌 ESTRUTURA DAS PÁGINAS
+
+Cada página deve conter:
+
+* Title (SEO)
+* Meta description
+* H1
+* Texto relevante (mínimo 300 palavras)
+* Ferramenta funcional
+* Anúncios (header e footer já existentes)
+* Layout padrão do site
+* Responsivo (mobile + desktop)
+
+---
+
+# 🔗 LINKAGEM INTERNA (MUITO IMPORTANTE)
+
+Adicionar links entre páginas:
+
+* Home → Temporary Email
+* Home → Email Temporário
+* Home → Receive SMS
+
+E também entre elas mesmas.
+
+Isso melhora o SEO.
+
+---
+
+# 🌍 MULTI-IDIOMA (BÁSICO)
+
+* Página em inglês e português separadas
+* URLs diferentes
+* Conteúdo não duplicado
+
+---
+
+# ⚙️ SEO TÉCNICO
+
+Implementar:
+
+1. Sitemap.xml com todas as páginas
+2. robots.txt permitindo indexação
+3. Tags meta:
+
+   * description
+   * viewport
+4. Open Graph (opcional)
+
+---
+
+# 📈 GOOGLE INDEXAÇÃO
+
+Garantir que:
+
+* As páginas sejam acessíveis por URL direta
+* Não estejam bloqueadas
+* Estrutura limpa e indexável
+
+---
+
+# 📊 RESULTADO ESPERADO
+
+Após publicação:
+
+* Google começa a indexar as páginas
+* Usuários encontram o site via busca
+* Tráfego orgânico cresce gradualmente
+* A monetização aumenta com visitas
+
+---
+
+# ⚠️ REGRAS IMPORTANTES
+
+* NÃO criar páginas vazias
+* NÃO duplicar conteúdo entre idiomas
+* NÃO alterar anúncios existentes
+* NÃO quebrar layout atual
+
+---
+
+# 🚀 RESUMO FINAL
+
+Cada página criada = uma nova porta de entrada no Google
+
+Objetivo:
+Transformar o site de 1 página em múltiplas páginas otimizadas para tráfego orgânico global.
