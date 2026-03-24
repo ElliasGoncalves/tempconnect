@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Shield, Globe, Clock, Smartphone } from 'lucide-react';
-import { SmsView } from '@/components/SmsView';
+import { SmsView } from "./SmsView";
 
 export default function ReceiveSms() {
   useEffect(() => {

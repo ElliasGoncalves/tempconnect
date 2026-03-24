@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Copy, RefreshCw, Shield, ShieldAlert, ShieldCheck, Check } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Slider } from '@/components/ui/slider';
-import { Switch } from '@/components/ui/switch';
-import { toast } from 'sonner';
+import React, { useState, useEffect, useCallback } from "react";
+import { Copy, RefreshCw, Shield, ShieldAlert, ShieldCheck, Check } from "lucide-react";
+import { Button } from "./components/ui/button";
+import { Slider } from "./components/ui/slider";
+import { Switch } from "./components/ui/switch";
+import { toast } from "sonner";
 
 export function PasswordGenerator() {
   const [password, setPassword] = useState('');

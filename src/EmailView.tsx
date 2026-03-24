@@ -2,7 +2,7 @@ import React from 'react';
 import { Copy, RefreshCw, Trash2, Mail, Clock, ArrowRight, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useTempMail } from '@/hooks/useTempMail';
+import { useTempMail } from "./useTempMail";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import QRCode from 'react-qr-code';
 import { formatDistanceToNow } from 'date-fns';
