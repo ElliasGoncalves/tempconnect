@@ -9,6 +9,7 @@ import ReceiveSms from "./ReceiveSms";
 import PasswordGeneratorPage from "./PasswordGeneratorPage";
 import CpfCnpjGeneratorPage from "./CpfCnpjGeneratorPage";
 import { Layout } from "./Layout";
+import AdTop from "./AdTop";
 
 function NotFound() {
   return <div>Page not found.</div>;
@@ -17,6 +18,12 @@ function NotFound() {
 function Router() {
   return (
     <Layout>
+      <div className="w-full flex justify-center py-4">
+        <div className="w-full max-w-5xl">
+          <AdTop />
+        </div>
+      </div>
+
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/temporary-email" component={TemporaryEmailEn} />
