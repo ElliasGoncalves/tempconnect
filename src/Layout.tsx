@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, useLocation } from 'wouter';
-import { Terminal, Shield, Menu, X, Lock, Share2, Twitter, Linkedin, Link as LinkIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useState, useEffect } from 'react';
-import { cn } from '@/lib/utils';
+import React from "react";
+import { Link, useLocation } from "wouter";
+import { Terminal, Shield, Menu, X, Lock, Twitter, Linkedin, Link as LinkIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,8 +26,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
   };
 
   useEffect(() => {
-    const container = document.getElementById("adsterra-footer");
-    if (container && !container.hasChildNodes()) {
+    const topContainer = document.getElementById("adsterra-top");
+    if (topContainer && !topContainer.hasChildNodes()) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.setAttribute("data-cfasync", "false");
+      script.src =
+        "https://pl28947942.profitablecpmratenetwork.com/26a6990fb5e8aec7e2293294b9c76217/invoke.js";
+
+      const inner = document.createElement("div");
+      inner.id = "container-26a6990fb5e8aec7e2293294b9c76217";
+
+      topContainer.innerHTML = "";
+      topContainer.appendChild(script);
+      topContainer.appendChild(inner);
+    }
+
+    const footerContainer = document.getElementById("adsterra-footer");
+    if (footerContainer && !footerContainer.hasChildNodes()) {
       const script1 = document.createElement("script");
       script1.innerHTML = `
         atOptions = {
@@ -40,25 +56,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
       `;
 
       const script2 = document.createElement("script");
-      script2.src = "https://www.highperformanceformat.com/ef587ff4b47a025735540235e07467a0/invoke.js";
+      script2.src =
+        "https://www.highperformanceformat.com/ef587ff4b47a025735540235e07467a0/invoke.js";
       script2.async = true;
 
-      container.innerHTML = "";
-      container.appendChild(script1);
-      container.appendChild(script2);
+      footerContainer.innerHTML = "";
+      footerContainer.appendChild(script1);
+      footerContainer.appendChild(script2);
     }
   }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground font-mono selection:bg-primary selection:text-primary-foreground overflow-x-hidden">
-      {/* Scanline overlay */}
       <div className="fixed inset-0 pointer-events-none z-50 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.03),rgba(0,255,0,0.01),rgba(0,0,255,0.03))] bg-[length:100%_4px,6px_100%] opacity-60"></div>
-      
-      {/* Top Ad Placeholder */}
+
       <div className="w-full bg-muted/5 border-b border-border/50 py-2 flex justify-center overflow-hidden">
-        <div style={{ textAlign: 'center', margin: '10px 0' }}>
-          <script async={true} data-cfasync="false" src="https://pl28947942.profitablecpmratenetwork.com/26a6990fb5e8aec7e2293294b9c76217/invoke.js"></script>
-          <div id="container-26a6990fb5e8aec7e2293294b9c76217"></div>
+        <div style={{ textAlign: "center", margin: "10px 0" }}>
+          <div id="adsterra-top"></div>
         </div>
       </div>
 
@@ -72,43 +86,67 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </span>
             </Link>
           </div>
-          
+
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/' ? "text-primary" : ""
-              )}>[ Email ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/" ? "text-primary" : ""
+                )}
+              >
+                [ Email ]
+              </span>
             </Link>
             <Link href="/receive-sms">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/receive-sms' ? "text-primary" : ""
-              )}>[ SMS ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/receive-sms" ? "text-primary" : ""
+                )}
+              >
+                [ SMS ]
+              </span>
             </Link>
             <Link href="/password-generator">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/password-generator' ? "text-primary" : ""
-              )}>[ PASSWORD ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/password-generator" ? "text-primary" : ""
+                )}
+              >
+                [ PASSWORD ]
+              </span>
             </Link>
             <Link href="/gerador-cpf-cnpj">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/gerador-cpf-cnpj' ? "text-primary" : ""
-              )}>[ CPF/CNPJ ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/gerador-cpf-cnpj" ? "text-primary" : ""
+                )}
+              >
+                [ CPF/CNPJ ]
+              </span>
             </Link>
             <Link href="/tools/card-generator">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/tools/card-generator' ? "text-primary" : ""
-              )}>[ Tools ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/tools/card-generator" ? "text-primary" : ""
+                )}
+              >
+                [ Card ]
+              </span>
             </Link>
             <Link href="/about">
-              <span className={cn(
-                "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
-                location === '/about' ? "text-primary" : ""
-              )}>[ About ]</span>
+              <span
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest cursor-pointer",
+                  location === "/about" ? "text-primary" : ""
+                )}
+              >
+                [ About ]
+              </span>
             </Link>
           </nav>
 
@@ -117,9 +155,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
               SYSTEM ONLINE
             </div>
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -129,42 +167,52 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </header>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 top-16 z-30 bg-background border-b border-border p-4">
           <nav className="flex flex-col gap-4">
             <Link href="/">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; Email_Module</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; Email_Module
+              </span>
             </Link>
             <Link href="/receive-sms">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; SMS_Module</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; SMS_Module
+              </span>
             </Link>
             <Link href="/password-generator">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; Password_Gen</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; Password_Gen
+              </span>
             </Link>
             <Link href="/gerador-cpf-cnpj">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; CPF_CNPJ_Gen</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; CPF_CNPJ_Gen
+              </span>
             </Link>
             <Link href="/tools/card-generator">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; Dev_Tools</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; Card_Generator
+              </span>
             </Link>
             <Link href="/about">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; System_Info</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; System_Info
+              </span>
             </Link>
             <Link href="/privacy">
-              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>&gt; Privacy_Policy</span>
+              <span className="text-lg font-medium hover:text-primary uppercase tracking-widest block border-b border-border pb-2 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                &gt; Privacy_Policy
+              </span>
             </Link>
           </nav>
         </div>
       )}
 
-      <main className="flex-1 container py-8 relative z-10">
-        {children}
-      </main>
+      <main className="flex-1 container py-8 relative z-10">{children}</main>
 
-      {/* Footer Ad Placeholder */}
       <div className="w-full bg-muted/5 border-t border-border/50 py-8 flex justify-center overflow-hidden mt-auto">
-        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+        <div style={{ textAlign: "center", margin: "20px 0" }}>
           <div id="adsterra-footer"></div>
         </div>
       </div>
@@ -189,9 +237,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link href="/gerador-cpf-cnpj"><span className="hover:text-primary cursor-pointer">CPF/CNPJ</span></Link>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-6">
-            {/* Social Share */}
             <div className="flex items-center gap-3">
               <span className="text-xs text-muted-foreground uppercase tracking-widest hidden sm:inline-block">Share:</span>
               <a href={shareLinks.whatsapp} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-[#25D366] transition-colors" title="Share on WhatsApp">
